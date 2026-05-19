@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About – Christian Köberl">
+	<article class="about">
+		<h1>About Me</h1>
+
+		<section>
+			<p>
+				Hi! I'm <strong>Christian Köberl</strong>, a software developer based in Austria. I love
+				crafting clean, reliable software and am always eager to learn new technologies.
+			</p>
+		</section>
+
+		<section>
+			<h2>What I Do</h2>
+			<p>
+				I specialize in building web applications and backend services. My day-to-day work involves
+				designing systems, writing code, and collaborating with teams to deliver great products.
+			</p>
+			<ul>
+				<li>Web development (frontend &amp; backend)</li>
+				<li>Software architecture &amp; system design</li>
+				<li>DevOps &amp; cloud infrastructure</li>
+				<li>Open source contributions</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Tech I Work With</h2>
+			<div class="tags">
+				{["Java", "TypeScript", "JavaScript", "Astro", "Node.js", "Docker", "Kubernetes", "Git"].map(
+					(tech) => <span class="tag">{tech}</span>
+				)}
+			</div>
+		</section>
+
+		<section>
+			<h2>Get in Touch</h2>
+			<p>Feel free to reach out — I'm always happy to connect!</p>
+			<ul class="links">
+				<li><a href="https://github.com/derkoe" target="_blank" rel="noopener">GitHub</a></li>
+			</ul>
+		</section>
+	</article>
+</Layout>
+
+<style>
+	.about {
+		max-width: 680px;
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin: 0 0 1.5rem;
+		color: #1a1a2e;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		margin: 2rem 0 0.75rem;
+		color: #1a1a2e;
+	}
+
+	p {
+		color: #374151;
+		line-height: 1.75;
+		margin: 0 0 1rem;
+	}
+
+	ul {
+		color: #374151;
+		line-height: 2;
+		padding-left: 1.25rem;
+	}
+
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-top: 0.5rem;
+	}
+
+	.tag {
+		background: #ede9fe;
+		color: #5b21b6;
+		padding: 0.25rem 0.75rem;
+		border-radius: 999px;
+		font-size: 0.875rem;
+		font-weight: 500;
+	}
+
+	.links {
+		list-style: none;
+		padding: 0;
+	}
+
+	.links a {
+		color: #3245ff;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.links a:hover {
+		text-decoration: underline;
+	}
+</style>
